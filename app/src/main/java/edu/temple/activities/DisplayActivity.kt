@@ -32,5 +32,10 @@ class DisplayActivity : AppCompatActivity() {
         lyricsDisplayTextView = findViewById(R.id.lyricsDisplayTextView)
         textSizeSelectorButton = findViewById(R.id.textSizeSelectorButton)
 
+        textSizeSelectorButton.setOnClickListener(){
+            val intent = Intent(this, TextSizeActivity::class.java)
+            launcher.launch(intent)
+        }
+
     }
 }
